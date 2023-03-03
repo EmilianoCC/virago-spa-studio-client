@@ -1,0 +1,44 @@
+.fondoV{
+background-image: url("/public/prueba.jpg");
+background-size:cover;
+background-repeat: no-repeat;
+width: 100vw;
+height: 80vh;
+display: flex;
+justify-content: center;
+
+padding-top: 5%;
+
+
+}
+.antxt{
+border-radius: 1%;
+height: 50%;
+margin-left: 5%;
+width: 1000px;
+background-color: rgba(00, 00, 00, .4);
+font-size: 30px;
+font-family: ;
+
+}
+
+.imagencar{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.carimg{
+	display: flex;
+	justify-content: center;
+}
+
+.carrusel{
+margin: 0 auto;
+width: 50vw;
+}
+.cards{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
