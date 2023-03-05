@@ -19,7 +19,8 @@ function HomePage() {
           <p>
             {' '}
             HOLAasdasdasdasdadas dasd
-            asdaasdasdasdasdasdasdaasadasdasdasdasdasdasd
+            asdaasdasdasdasdasdasdaasadasdasdasdasdasdasd asdoasdkasodkasopkd
+            asdklasdkasdklosdkas:D:D:D:D:D:D:D:D
           </p>
         </div>
       </div>

@@ -13,18 +13,23 @@ function Navbar() {
     <nav className='nav'>
       {isLoggedIn && (
         <>
-          <button type='primary' onClick={logOutUser}>
-            Logout
-          </button>
+          <div className='bt'>
+            <Button type='primary' onClick={logOutUser}>
+              Logout
+            </Button>
 
-          <Link to='/profile'>
-            <button>Profile</button>
-          </Link>
-          <Link to='/'>
-            <Button type='primary'>Home</Button>
-          </Link>
+            <Link to='/profile'>
+              <Button type='primary'>Profile</Button>
+            </Link>
+            {/* <Link to='/'>
+              <Button type='primary'>Home</Button>
+            </Link> */}
+            <Link to='/datePage'>
+              <Button type='primary'>Crea tu cita</Button>
+            </Link>
 
-          <span>{user && user.name}</span>
+            <span>{user && user.name}</span>
+          </div>
         </>
       )}
 

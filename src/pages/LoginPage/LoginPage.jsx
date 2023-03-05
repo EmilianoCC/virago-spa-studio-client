@@ -77,7 +77,12 @@ function LoginPage() {
           onChange={handlePassword}
         />
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-          <Button type='primary' htmlType='submit'>
+          <Button
+            className='btn'
+            type='primary'
+            htmlType='submit'
+            style={{ background: '#fec89a' }}
+          >
             Login
           </Button>
         </Form.Item>
