@@ -3,12 +3,16 @@ import './DatePage.css'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import spaService from '../../services/spa.service'
+import { useContext } from 'react'
+import { AuthContext } from '../../context/auth.context'
 
 function DatePage() {
+  const { isLoggedIn, user, logOutUser } = useContext(AuthContext)
   const [name, setName] = useState('')
   const [service, setService] = useState('')
   const [date, setDate] = useState('')
   const [email, setEmail] = useState('')
+  const [id, setId] = useState(user._id)
   const [errorMessage, setErrorMessage] = useState(undefined)
 
   const navigate = useNavigate()
@@ -17,12 +21,13 @@ function DatePage() {
   const handleService = (e) => setService(e.target.value)
   const handleDate = (e) => setDate(e.target.value)
   const handleEmail = (e) => setEmail(e.target.value)
+  const handleId = (e) => setId(e.target.value)
 
   const handleSubmit = (e) => {
     e.preventDefault()
     // Create an object representing the request body
-    const requestBody = { name, service, date, email }
-
+    const requestBody = { name, service, date, email, id }
+    console.log(id)
     spaService
       .createOne(requestBody)
       .then((response) => {
@@ -36,6 +41,7 @@ function DatePage() {
       })
   }
 
+  console.log(user._id)
   return (
     <div>
       <h1>Date</h1>

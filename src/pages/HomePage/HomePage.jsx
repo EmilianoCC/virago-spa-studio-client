@@ -1,6 +1,9 @@
 import './HomePage.css'
 import { Card, Divider } from 'antd'
-import { Carousel } from 'antd'
+import '../../../node_modules/slick-carousel/slick/slick.css'
+import '../../../node_modules/slick-carousel/slick/slick-theme.css'
+import Slider from 'react-slick'
+import React, { Component } from 'react'
 const { Meta } = Card
 const contentStyle = {
   height: '160px',
@@ -8,6 +11,17 @@ const contentStyle = {
   lineHeight: '160px',
   textAlign: 'center',
   background: '#364d79'
+}
+const settings = {
+  className: 'center',
+  centerMode: true,
+  infinite: true,
+  // centerPadding: '60px',
+  slidesToShow: 3,
+  speed: 400,
+  adaptiveHeight: true,
+  arrows: true,
+  autoplay: true
 }
 
 function HomePage() {
@@ -24,23 +38,31 @@ function HomePage() {
           </p>
         </div>
       </div>
-      <div className='carrusel'>
-        <Carousel autoplay>
-          <div className='imagencar'>
-            <img src='/Carrusel1.jpg' height='200px' />
-            <span>hola soy german</span>
+      <div className='carru'>
+        <Slider {...settings}>
+          <div className='carrusel'>
+            <img src='/Carrusel1.jpg' />
+            <p>asasdasdasdasdadsasdasdasdasdasdasdasdasdasdasdasdas</p>
           </div>
-          <div className='carimg'>
-            <img src='/Carrusel2.jpg' height='200px' />
+          <div className='carrusel'>
+            <img src='/Carrusel2.jpg' />
+            <p>asasdasdasdasdadsasdasdasdasdasdasdasdasdasdasdasdas</p>
           </div>
-          <div>
-            <img src='/Carrusel3.jpg' height='200px' />
+          <div className='carrusel'>
+            <img src='/Carrusel3.jpg' />
           </div>
-          <div>
-            <img src='/Carrusel4.jpg' height='200px' />
+          <div className='carrusel'>
+            <img src='/Carrusel4.jpg' />
           </div>
-        </Carousel>
+          <div className='carrusel'>
+            <img src='/Carrusel1.jpg' />
+          </div>
+          <div className='carrusel'>
+            <img src='/Carrusel2.jpg' />
+          </div>
+        </Slider>
       </div>
+
       <div className='cards'>
         <Card
           hoverable

@@ -1,10 +1,15 @@
 .nav{
 	background-color: #fcd5ce;
-	padding: 30px;
+	padding:20px;
 	text-align: right;
 
 }
 .nav Button {
 	background-color: #fec89a;
-	color:gray
+	color:gray;
+	font-size: 30px !important;
+}
+.btnbar button{
+	margin-right: 50px;
+	height: auto !important;
 }

@@ -20,8 +20,16 @@ class SpaService {
   }
 
   // POST /api/examples
+
   createOne = async (requestBody) => {
+    // Appointment.create(requestBody)
+    //       .then(dbpost =>  {
+
+    //         return User.findByIdAndUpdate(req.session.currentUser._id, { $push: { Appointment: dbpost._id  } });})
+    //       }
+    // .then(() => {
     return this.api.post('/spa/create', requestBody)
+    // })
   }
 
   // GET /api/examples

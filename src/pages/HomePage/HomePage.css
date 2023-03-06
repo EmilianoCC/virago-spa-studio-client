@@ -1,12 +1,12 @@
+
 .fondoV{
 background-image: url("/public/prueba.jpg");
 background-size:cover;
 background-repeat: no-repeat;
-width: 100vw;
+
 height: 80vh;
 display: flex;
 justify-content: center;
-
 padding-top: 5%;
 
 
@@ -18,27 +18,45 @@ margin-left: 5%;
 width: 1000px;
 background-color: rgba(00, 00, 00, .4);
 font-size: 30px;
-font-family: ;
 
 }
+.carru{
+max-width: 100vw;
+padding-left: 50px;
+padding-right: 50px;
 
-.imagencar{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-}
 
-.carimg{
-	display: flex;
-	justify-content: center;
 }
+ .carrusel img{
+max-width: 600px;
+max-height: 330px;
 
-.carrusel{
-margin: 0 auto;
-width: 50vw;
-}
+ }
+
+ .carrusel{
+text-align: center;
+position: relative;
+
+ }
+ .carrusel p{
+position: absolute;
+top: 25px;
+right: 25px;
+
+
+ }
+
+ .slick-prev:before, .slick-next:before{
+color: black !important
+
+ }
 .cards{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	padding-top: 100px;
+}
+.redes{
+
+	padding-left: 20px;
 }

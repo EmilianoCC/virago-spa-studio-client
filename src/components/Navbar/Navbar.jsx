@@ -36,11 +36,11 @@ function Navbar() {
       {!isLoggedIn && (
         <>
           <div>
-            <Link to='/signup'>
+            <Link className='btnbar' to='/signup'>
               {' '}
               <Button type='primary'>Sign Up</Button>{' '}
             </Link>
-            <Link to='/login'>
+            <Link className='btnbar' to='/login'>
               {' '}
               <Button type='primary'>Login</Button>{' '}
             </Link>
