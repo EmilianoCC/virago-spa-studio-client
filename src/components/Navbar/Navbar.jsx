@@ -13,7 +13,7 @@ function Navbar() {
     <nav className='nav'>
       {isLoggedIn && (
         <>
-          <div className='bt'>
+          <div className='bt btnbar'>
             <Button type='primary' onClick={logOutUser}>
               Logout
             </Button>
@@ -21,9 +21,9 @@ function Navbar() {
             <Link to='/profile'>
               <Button type='primary'>Profile</Button>
             </Link>
-            {/* <Link to='/'>
+            <Link to='/'>
               <Button type='primary'>Home</Button>
-            </Link> */}
+            </Link>
             <Link to='/datePage'>
               <Button type='primary'>Crea tu cita</Button>
             </Link>
@@ -39,6 +39,9 @@ function Navbar() {
             <Link className='btnbar' to='/signup'>
               {' '}
               <Button type='primary'>Sign Up</Button>{' '}
+            </Link>
+            <Link className='btnbar' to='/'>
+              <Button type='primary'>Home</Button>
             </Link>
             <Link className='btnbar' to='/login'>
               {' '}

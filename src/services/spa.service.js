@@ -41,6 +41,9 @@ class SpaService {
   getOne = async (id) => {
     return this.api.get(`/api/examples/${id}`)
   }
+  getAppointment = async (userid) => {
+    return this.api.get(`/spa/citas/${userid}`)
+  }
 
   // PUT /api/examples/:id
   updateOne = async (id, requestBody) => {

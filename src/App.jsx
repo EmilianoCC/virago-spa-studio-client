@@ -43,6 +43,7 @@ function App() {
               </IsPrivate>
             }
           />
+
           <Route
             path='/signup'
             element={
@@ -75,10 +76,10 @@ function App() {
         <div className='footer'>
           <h1>Siguenos en nuestras redes sociales: </h1>
           <Space className='redes'>
-            {/* <Link href='https://www.instagram.com/'> */}
-            <InstagramFilled />
-            {/* </Link> */}
-            <FacebookFilled />
+            <img className='imgf' src='/facebook.png' alt='' />
+            <p>Facebook</p>
+            <img className='imgf' src='/instagram.png' alt='' />
+            <p>Instagram</p>
           </Space>
         </div>
       </Footer>

@@ -49,48 +49,50 @@ function LoginPage() {
   return (
     <div className='LoginPage'>
       <h1>Login</h1>
+      <div className='border'>
+        <form
+          name='basic'
+          labelCol={{ span: 8 }}
+          wrapperCol={{ span: 16 }}
+          style={{ maxWidth: 600 }}
+          initialValues={{ remember: true }}
+          onSubmit={handleLoginSubmit}
+        >
+          <div className='inputEmail'>
+            <label>Email: </label>
+            <Input
+              className='prueba1'
+              type='email'
+              name='email'
+              value={email}
+              onChange={handleEmail}
+            />
+          </div>
 
-      <form
-        name='basic'
-        labelCol={{ span: 8 }}
-        wrapperCol={{ span: 16 }}
-        style={{ maxWidth: 600 }}
-        initialValues={{ remember: true }}
-        autoComplete='off'
-        onSubmit={handleLoginSubmit}
-      >
-        <div className='inputEmail'>
-          <label>Email: </label>
+          <label>Password:</label>
           <Input
-            type='email'
-            name='email'
-            value={email}
-            onChange={handleEmail}
+            className='prueba1'
+            type='password'
+            name='password'
+            value={password}
+            onChange={handlePassword}
           />
-        </div>
-
-        <label>Password:</label>
-        <Input
-          type='password'
-          name='password'
-          value={password}
-          onChange={handlePassword}
-        />
-        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-          <Button
-            className='btn'
-            type='primary'
-            htmlType='submit'
-            style={{ background: '#fec89a' }}
-          >
-            Login
-          </Button>
-        </Form.Item>
-      </form>
+          <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <Button
+              className='btn'
+              type='primary'
+              htmlType='submit'
+              style={{ background: '#fec89a' }}
+            >
+              Login
+            </Button>
+          </Form.Item>
+        </form>
+      </div>
       {errorMessage && <p className='error-message'>{errorMessage}</p>}
-
-      <p>Don't have an account yet?</p>
-      <Link to={'/signup'}> Sign Up</Link>
+      <p>
+        Don't have an account yet? <Link to={'/signup'}> Sign Up</Link>
+      </p>
     </div>
   )
 }

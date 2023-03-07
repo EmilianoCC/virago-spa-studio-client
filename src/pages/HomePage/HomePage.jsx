@@ -28,13 +28,25 @@ function HomePage() {
   return (
     <div className='home'>
       <div className='fondoV'>
-        <img src='/Andrea.jpg' height='50%' />
+        <img src='/Andrea.jpg' height='60%' />
         <div className='antxt'>
           <p>
-            {' '}
-            HOLAasdasdasdasdadas dasd
-            asdaasdasdasdasdasdasdaasadasdasdasdasdasdasd asdoasdkasodkasopkd
-            asdklasdkasdklosdkas:D:D:D:D:D:D:D:D
+            Andrea es una artista del maquillaje y las uñas con una gran pasión
+            por la belleza. Desde joven, se interesó por el mundo del maquillaje
+            y las uñas, y decidió seguir su sueño de convertirse en una
+            profesional en este campo.
+          </p>
+          <p>
+            Comenzó a estudiar en una academia de belleza y rápidamente demostró
+            su talento en la creación de diseños de uñas y en el arte del
+            maquillaje.
+          </p>
+          <p>
+            Andrea decidió abrir su propio estudio de uñas y maquillaje, donde
+            ofrece servicios de alta calidad y personalizados para cada cliente.
+            Es conocida por su enfoque detallado y cuidadoso en cada uña y su
+            capacidad para crear looks de maquillaje que realzan la belleza
+            natural de cada persona.
           </p>
         </div>
       </div>
@@ -42,70 +54,110 @@ function HomePage() {
         <Slider {...settings}>
           <div className='carrusel'>
             <img src='/Carrusel1.jpg' />
-            <p>asasdasdasdasdadsasdasdasdasdasdasdasdasdasdasdasdas</p>
+            <div className='carrusel-texto'>
+              <p>Maquillaje profesional para eventos </p>
+            </div>
           </div>
           <div className='carrusel'>
             <img src='/Carrusel2.jpg' />
-            <p>asasdasdasdasdadsasdasdasdasdasdasdasdasdasdasdasdas</p>
+            <div className='carrusel-texto'>
+              <p>Maquillaje profesional para bodas</p>
+            </div>
           </div>
           <div className='carrusel'>
             <img src='/Carrusel3.jpg' />
+            <div className='carrusel-texto'>
+              <p>Maquillaje para enventos</p>
+            </div>
           </div>
           <div className='carrusel'>
             <img src='/Carrusel4.jpg' />
+            <div className='carrusel-texto'>
+              <p>Maquillaje profesional para documentales</p>
+            </div>
           </div>
           <div className='carrusel'>
-            <img src='/Carrusel1.jpg' />
+            <img src='/Carrusel5.jpg' />
+            <div className='carrusel-texto'>
+              <p>Maquillaje para eventos profesionales</p>
+            </div>
           </div>
-          <div className='carrusel'>
+          {/* <div className='carrusel'>
             <img src='/Carrusel2.jpg' />
-          </div>
+            <div className='carrusel-texto'>
+              <p>asdaasdasdasdasdasdasdaasadasdasdasdasdasdasd</p>
+            </div>
+          </div> */}
         </Slider>
       </div>
 
       <div className='cards'>
-        <Card
-          hoverable
-          style={{
-            width: 240
-          }}
-          cover={
-            <img
-              alt='example'
-              src='https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png'
-            />
-          }
-        >
-          <Meta title='Europe Street beat' description='www.instagram.com' />
-        </Card>
-        <Card
-          hoverable
-          style={{
-            width: 240
-          }}
-          cover={
-            <img
-              alt='example'
-              src='https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png'
-            />
-          }
-        >
-          <Meta title='Europe Street beat' description='www.instagram.com' />
-        </Card>
-        <Card
-          hoverable
-          style={{
-            width: 240
-          }}
-          cover={
-            <img
-              alt='example'
-              src='https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png'
-            />
-          }
-        >
-          <Meta title='Europe Street beat' description='www.instagram.com' />
-        </Card>
+        <div className='servicios'>
+          <Card
+            hoverable
+            style={{
+              width: 240
+            }}
+            cover={<img alt='example' src='/Card1.jpg' />}
+          >
+            <Meta title='Maquillaje para bodas' />
+          </Card>
+        </div>
+        <div className='servicios'>
+          <Card
+            hoverable
+            style={{
+              width: 240
+            }}
+            cover={<img alt='example' src='/Card2.jpg' />}
+          >
+            <Meta title='Plasma Pen' />
+          </Card>
+        </div>
+        <div className='servicios'>
+          <Card
+            hoverable
+            style={{
+              width: 240
+            }}
+            cover={<img alt='example' src='/Card3.jpg' />}
+          >
+            <Meta title='Maquillaje para Halloween' />
+          </Card>
+        </div>
+        <div className='servicios'>
+          <Card
+            hoverable
+            style={{
+              width: 240
+            }}
+            cover={<img alt='example' src='/Card4.jpg' />}
+          >
+            <Meta title='Unas' />
+          </Card>
+        </div>
+        <div className='servicios'>
+          <Card
+            hoverable
+            style={{
+              width: 240
+            }}
+            cover={<img alt='example' src='/Card5.jpg' />}
+          >
+            <Meta title='Pestanas' />
+          </Card>
+        </div>
+        <div className='servicios'>
+          <Card
+            hoverable
+            style={{
+              width: 240
+            }}
+            cover={<img alt='example' src='/Card6.jpg' />}
+          >
+            <Meta title='Radiofrecuencia facial' />
+          </Card>
+        </div>
       </div>
     </div>
   )

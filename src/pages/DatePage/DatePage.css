@@ -1,0 +1,25 @@
+.DatePage{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+justify-content: center;
+padding: 169px;
+font-size: 35px;
+
+}
+
+.input{
+font-size: 30px;
+}
+.prueba1{
+	font-size: 30px;
+
+}
+
+.btn{
+	font-size: 30px;
+	color: gray;
+	height: auto !important;
+	margin-top: 20px;
+	
+}
