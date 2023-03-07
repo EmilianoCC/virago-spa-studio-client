@@ -58,6 +58,7 @@ function SignupPage() {
         style={{ maxWidth: 600 }}
         initialValues={{ remember: true }}
         onSubmit={handleSignupSubmit}
+        autoComplete='off'
       >
         <div className='input'>
           <label>Email:</label>
@@ -92,7 +93,8 @@ function SignupPage() {
         <Form.Item className='btnprueba' wrapperCol={{ offset: 8, span: 16 }}>
           <Button
             className='btn'
-            type='submit'
+            type='primary'
+            htmlType='submit'
             style={{ background: '#fec89a' }}
           >
             Sign Up

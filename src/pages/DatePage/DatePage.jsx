@@ -95,7 +95,8 @@ function DatePage() {
         </div>
         <Button
           className='btn btnprueba'
-          type='submit'
+          type='primary'
+          htmlType='submit'
           style={{ background: '#fec89a' }}
         >
           Crear cita
