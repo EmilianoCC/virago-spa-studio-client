@@ -22,14 +22,7 @@ class SpaService {
   // POST /api/examples
 
   createOne = async (requestBody) => {
-    // Appointment.create(requestBody)
-    //       .then(dbpost =>  {
-
-    //         return User.findByIdAndUpdate(req.session.currentUser._id, { $push: { Appointment: dbpost._id  } });})
-    //       }
-    // .then(() => {
     return this.api.post('/spa/create', requestBody)
-    // })
   }
 
   // GET /api/examples
@@ -45,14 +38,18 @@ class SpaService {
     return this.api.get(`/spa/citas/${userid}`)
   }
 
+  getOneAppointment = async (userid) => {
+    return this.api.get(`/citas/citas/${userid}`)
+  }
+
   // PUT /api/examples/:id
-  updateOne = async (id, requestBody) => {
-    return this.api.put(`/api/examples/${id}`, requestBody)
+  updateAppointment = async (userid, requestBody) => {
+    return this.api.post(`/citas/update/${userid}`, requestBody)
   }
 
   // DELETE /api/examples/:id
-  deleteProject = async (id) => {
-    return this.api.delete(`/api/examples/${id}`)
+  deleteAppointment = async (id) => {
+    return this.api.delete(`/citas/citas/${id}`)
   }
 }
 

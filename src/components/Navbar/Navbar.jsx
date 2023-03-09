@@ -14,21 +14,25 @@ function Navbar() {
       {isLoggedIn && (
         <>
           <div className='bt btnbar'>
-            <Button type='primary' onClick={logOutUser}>
-              Logout
-            </Button>
+            <img className='logotipo' src='/logtipo.jpg' />
+
+            <Link to='/'>
+              <Button type='primary'>Inicio</Button>
+            </Link>
 
             <Link to='/profile'>
-              <Button type='primary'>Profile</Button>
+              <Button type='primary'>Perfil</Button>
             </Link>
-            <Link to='/'>
-              <Button type='primary'>Home</Button>
-            </Link>
+
             <Link to='/datePage'>
               <Button type='primary'>Crea tu cita</Button>
             </Link>
 
-            <span>{user && user.name}</span>
+            <Button type='primary' onClick={logOutUser}>
+              Cerrar sesion
+            </Button>
+
+            <span>{user && user.name} </span>
           </div>
         </>
       )}
@@ -36,16 +40,17 @@ function Navbar() {
       {!isLoggedIn && (
         <>
           <div>
+            <Link className='btnbar' to='/'>
+              <Button type='primary'>Inicio</Button>
+            </Link>
             <Link className='btnbar' to='/signup'>
               {' '}
-              <Button type='primary'>Sign Up</Button>{' '}
+              <Button type='primary'>Crea cuenta</Button>{' '}
             </Link>
-            <Link className='btnbar' to='/'>
-              <Button type='primary'>Home</Button>
-            </Link>
+
             <Link className='btnbar' to='/login'>
               {' '}
-              <Button type='primary'>Login</Button>{' '}
+              <Button type='primary'>Inicia Sesion</Button>{' '}
             </Link>
           </div>
         </>

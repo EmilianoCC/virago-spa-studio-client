@@ -4,6 +4,19 @@
 	text-align: right;
 
 }
+.nav span{
+	font-size: 25px;
+}
+
+.logotipo{
+	height: 55px;
+	width: 55px;
+	margin-right: 1400px;
+	padding-top: 5px;
+	border-radius: 1%;
+
+
+}
 .nav Button {
 	background-color: #fec89a;
 	color:gray;
