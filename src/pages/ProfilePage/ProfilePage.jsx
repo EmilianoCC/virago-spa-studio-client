@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
 import { AuthContext } from '../../context/auth.context'
 import spaService from '../../services/spa.service'
-import { Card, Col, Row, Button, message } from 'antd'
+import { Card, Col, Row, Button, message, Typography } from 'antd'
 import { Link, NavLink, useParams } from 'react-router-dom'
 
 import './ProfilePage.css'
@@ -42,37 +42,48 @@ function ProfilePage() {
   }
 
   return (
-    <div className='profile'>
-      <h1>Aqui estan todas tus citas </h1>
-      <div className='cards-container'>
-        {citasGuardadas.map((cita) => (
+    <div className='a'>
+      <div className='profile'>
+        <h1>Aqui estan todas tus citas </h1>
+        <div className='cards-container'>
           <Row gutter={16}>
-            <Col span={8}>
-              <Card className='cartas' title={cita.name} bordered={false}>
-                {cita.service === 'maquillaje' ? (
-                  <img src='/Card1.jpg' />
-                ) : null}
-                {cita.service === 'cavitacion' ? (
-                  <img src='/Card2.jpg' />
-                ) : null}
-                {cita.service === 'uñas' ? <img src='/Card3.jpg' /> : null}
-                {cita.service === 'pestañas' ? <img src='/Card4.jpg' /> : null}
-                <p>{cita.service}</p>
-                <p>Fecha : {cita.date}</p>
-                <Button
-                  type='primary'
-                  danger
-                  onClick={() => handleDelete(cita._id)}
+            {citasGuardadas.map((cita) => (
+              <Col span={8}>
+                <Card
+                  className='cartas'
+                  title={
+                    <Typography.Title level={2}>{cita.name}</Typography.Title>
+                  }
+                  bordered={false}
                 >
-                  Eliminar
-                </Button>
-                <NavLink to={`/update/${cita._id}`}>
-                  <Button>Update</Button>
-                </NavLink>
-              </Card>
-            </Col>
+                  {cita.service === 'Maquillaje' ? (
+                    <img src='/Card3.jpg' />
+                  ) : null}
+                  {cita.service === 'Cavitacion' ? (
+                    <img src='/Card2.jpg' />
+                  ) : null}
+                  {cita.service === 'Uñas' ? <img src='/Card4.jpg' /> : null}
+                  {cita.service === 'Pestañas' ? (
+                    <img src='/Card5.jpg' />
+                  ) : null}
+                  <p>{cita.service}</p>
+                  <p>Fecha : {cita.date}</p>
+                  <Button
+                    className='btnE bt'
+                    type='primary'
+                    danger
+                    onClick={() => handleDelete(cita._id)}
+                  >
+                    Eliminar
+                  </Button>
+                  <NavLink to={`/update/${cita._id}`}>
+                    <Button className='bt'>Actualizar</Button>
+                  </NavLink>
+                </Card>
+              </Col>
+            ))}
           </Row>
-        ))}
+        </div>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 .nav{
-	background-color: #fcd5ce;
-	padding:20px;
+	background: rgb(252,213,206);
+	background: linear-gradient(0deg, rgba(252,213,206,1) 0%, rgba(254,200,154,1) 79%);	padding:20px;
 	text-align: right;
 
 }

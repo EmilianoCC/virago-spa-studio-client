@@ -29,13 +29,23 @@ function Root() {
       >
         <Outlet />
       </Content>
-      <Footer style={{ background: 'pink' }}>
+      <Footer className='pieDePagina'>
         <div className='footer'>
           <h1>Siguenos en nuestras redes sociales: </h1>
           <Space className='redes'>
-            <img className='imgf' src='/facebook.png' />
+            <a
+              href='https://www.facebook.com/ViragoSpaStudio?mibextid=ZbWKwL'
+              target='_blank'
+            >
+              <img className='imgf' src='/facebook.png' />
+            </a>
             <p>Facebook</p>
-            <img className='imgf' src='/instagram.png' />
+            <a
+              href='https://www.instagram.com/virago_spastudio/?igshid=Mzc0YWU1OWY%3D'
+              target='_blank'
+            >
+              <img className='imgf' src='/instagram.png' />
+            </a>
             <p>Instagram</p>
           </Space>
         </div>

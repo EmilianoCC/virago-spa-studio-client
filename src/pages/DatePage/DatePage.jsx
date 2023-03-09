@@ -13,7 +13,7 @@ const { Option } = Select
 function DatePage() {
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext)
   const [name, setName] = useState('')
-  const [service, setService] = useState('maquillaje')
+  const [service, setService] = useState('Maquillaje')
 
   const [date, setDate] = useState('')
   const [email, setEmail] = useState('')
@@ -32,7 +32,7 @@ function DatePage() {
     e.preventDefault()
     // Create an object representing the request body
     const requestBody = { name, service, date, email, id }
-    console.log(id)
+
     spaService
       .createOne(requestBody)
       .then((response) => {
@@ -70,15 +70,14 @@ function DatePage() {
         <div className='input'>
           <label>Servicio : </label>
           <select
-            className='prueba1'
+            className='prueba1 content-select'
             name='service'
-            // value={service}
             onChange={handleService}
           >
-            <option value='maquillaje'>Maquillaje</option>
-            <option value='cavitacion'>Cavitacion</option>
-            <option value='uñas'>Uñas</option>
-            <option value='pestañas'>Pestañas</option>
+            <option value='Maquillaje'>Maquillaje</option>
+            <option value='Cavitacion'>Cavitacion</option>
+            <option value='Uñas'>Uñas</option>
+            <option value='Pestañas'>Pestañas</option>
           </select>
         </div>
         <div className='input'>

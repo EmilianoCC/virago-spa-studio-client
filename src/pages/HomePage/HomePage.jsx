@@ -67,7 +67,7 @@ function HomePage() {
           <div className='carrusel'>
             <img src='/Carrusel3.jpg' />
             <div className='carrusel-texto'>
-              <p>Maquillaje para enventos</p>
+              <p>Maquillaje para eventos</p>
             </div>
           </div>
           <div className='carrusel'>
@@ -79,15 +79,9 @@ function HomePage() {
           <div className='carrusel'>
             <img src='/Carrusel5.jpg' />
             <div className='carrusel-texto'>
-              <p>Maquillaje para eventos profesionales</p>
+              <p>Maquillaje para modelaje profesional</p>
             </div>
           </div>
-          {/* <div className='carrusel'>
-            <img src='/Carrusel2.jpg' />
-            <div className='carrusel-texto'>
-              <p>asdaasdasdasdasdasdasdaasadasdasdasdasdasdasd</p>
-            </div>
-          </div> */}
         </Slider>
       </div>
 
@@ -98,9 +92,9 @@ function HomePage() {
             style={{
               width: 240
             }}
-            cover={<img alt='example' src='/Card1.jpg' />}
+            cover={<img src='/lipolaser.jpg' />}
           >
-            <Meta title='Maquillaje para bodas' />
+            <Meta title='Lipolaser' />
           </Card>
         </div>
         <div className='servicios'>
@@ -109,7 +103,7 @@ function HomePage() {
             style={{
               width: 240
             }}
-            cover={<img alt='example' src='/Card2.jpg' />}
+            cover={<img height='400px' src='/Card2.jpg' />}
           >
             <Meta title='Plasma Pen' />
           </Card>
@@ -120,7 +114,7 @@ function HomePage() {
             style={{
               width: 240
             }}
-            cover={<img alt='example' src='/Card3.jpg' />}
+            cover={<img height='400px' src='/Card3.jpg' />}
           >
             <Meta title='Maquillaje para Halloween' />
           </Card>
@@ -133,7 +127,7 @@ function HomePage() {
             }}
             cover={<img alt='example' src='/Card4.jpg' />}
           >
-            <Meta title='Unas' />
+            <Meta title='Uñas' />
           </Card>
         </div>
         <div className='servicios'>
@@ -144,7 +138,7 @@ function HomePage() {
             }}
             cover={<img alt='example' src='/Card5.jpg' />}
           >
-            <Meta title='Pestanas' />
+            <Meta title='Pestañas' />
           </Card>
         </div>
         <div className='servicios'>
@@ -153,7 +147,7 @@ function HomePage() {
             style={{
               width: 240
             }}
-            cover={<img alt='example' src='/Card6.jpg' />}
+            cover={<img height='400px' src='/Card6.jpg' />}
           >
             <Meta title='Radiofrecuencia facial' />
           </Card>
