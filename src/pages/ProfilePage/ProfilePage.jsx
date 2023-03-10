@@ -29,12 +29,10 @@ function ProfilePage() {
     getCitas()
   }, [])
   const handleDelete = async (id) => {
-    console.log(id)
     try {
       await spaService.deleteAppointment(id)
       setCitasGuardadas(citasGuardadas.filter((cita) => cita._id !== id))
       message.success('La cita se eliminó correctamente')
-      console.log(id)
     } catch (error) {
       console.log(error)
       message.error('Hubo un error al eliminar la cita')

@@ -44,7 +44,6 @@ class SpaService {
 
   // PUT /api/examples/:id
   updateAppointment = async (id, requestBody) => {
-    console.log(requestBody, id)
     return this.api.put(`/citas/update/${id.id}`, { requestBody })
   }
 
