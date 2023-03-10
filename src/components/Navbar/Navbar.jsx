@@ -39,18 +39,22 @@ function Navbar() {
 
       {!isLoggedIn && (
         <>
-          <div>
-            <Link className='btnbar' to='/'>
-              <Button type='primary'>Inicio</Button>
+          <div className=' abc'>
+            <Link className='btnbara' to='/'>
+              <Button className='efg' type='primary'>
+                Inicio
+              </Button>
             </Link>
-            <Link className='btnbar' to='/signup'>
-              {' '}
-              <Button type='primary'>Crea cuenta</Button>{' '}
+            <Link className='btnbara' to='/signup'>
+              <Button className='efg' type='primary'>
+                Crea cuenta
+              </Button>
             </Link>
 
-            <Link className='btnbar' to='/login'>
-              {' '}
-              <Button type='primary'>Inicia Sesion</Button>{' '}
+            <Link className='btnbara' to='/login'>
+              <Button className='efg' type='primary'>
+                Inicia Sesion
+              </Button>
             </Link>
           </div>
         </>
