@@ -91,7 +91,7 @@ function DatePage() {
           />
         </div>
         <div className='input'>
-          <label>Coreo Electronico : </label>
+          <label>Correo Electronico : </label>
           <Input
             className='prueba1'
             type='text'

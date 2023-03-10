@@ -2,7 +2,7 @@
 	background: rgb(252,213,206);
 	background: linear-gradient(0deg, rgba(252,213,206,1) 0%, rgba(254,200,154,1) 79%);	padding:20px;
 	text-align: right;
-
+display: flex;
 }
 .nav span{
 	font-size: 25px;
@@ -11,18 +11,17 @@
 .logotipo{
 	height: 55px;
 	width: 55px;
-	margin-right: 1400px;
+	margin-right: 1000px;
 	padding-top: 5px;
 	border-radius: 1%;
-
+	margin-left: 50px;
 
 }
 .nav Button {
 	background-color: #fec89a;
 	color:gray;
-	font-size: 30px !important;
 }
 .btnbar button{
-	margin-right: 50px;
+	margin-right: 40px;
 	height: auto !important;
 }
